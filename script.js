@@ -1,14 +1,10 @@
-// let container = document.querySelector("#containter")
+const container = document.querySelector('#container')
 
-// function createRow () {
-// for (let i = 0; i < 256; i++) {
-// newDiv = document.createElement("div")
-// container.appendChild(newDiv).style.backgroundColor = "yellow"
-// }
-// }
+for (let i = 1; i < 256; i++) {
+  let div = document.createElement('div')
+  div.style.cssText = "border : 1px solid blue; height : 20px; padding : 10px; margin : 10px "
+  div.classList.add('divSquare')
+  container.appendChild(div)
+}
 
-// createRow()
 
-const date = new Date().toDateString(); 
-
-console.log(date)

@@ -1,6 +1,10 @@
-/* #container {
-  height : 700px;
-  width : 700px;
-  border-color: black;
-  background-color: blue;
-} */
+ #container {
+   display: flex; 
+   align-content: center;
+   justify-content: space-between; 
+  padding: 5px;
+  flex-wrap: wrap;
+} 
+
+
+
