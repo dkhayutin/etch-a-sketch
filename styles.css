@@ -1,10 +1,28 @@
- #container {
-   display: flex; 
-   align-content: center;
-   justify-content: space-between; 
-  padding: 5px;
-  flex-wrap: wrap;
+* {
+  box-sizing: border-box;
+}
+#container {
+   display: flex;  
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+   width: 400px;
+  
 } 
+
+#container > .divSquare {
+
+  border : 1px solid black;
+  height: 25px;
+  width: 25px;  
+  flex-direction: column;
+}
+
+
+
+
+
+
 
 
 
