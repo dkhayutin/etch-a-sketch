@@ -1,13 +1,15 @@
 const container = document.querySelector('#container')
 
-  function makeGrid() {
-  for (let i = 1; i <= (256); i++) {
-    let div = document.createElement('div')
+  function makeGrid(num) {
+    const squareSize = 640/num
+  for (let i = 1; i <= num *num ; i++) {
+    const div = document.createElement('div')
     div.classList.add('divSquare')
+     div.style.width = `${squareSize}px`
+     div.style.height = `${squareSize}px`
     container.appendChild(div)
+    }
   }
-  }
+  
 
-  makeGrid()
-
-
+  makeGrid(3)
