@@ -1,5 +1,7 @@
 const container = document.querySelector('#container')
 
+
+
   function makeGrid(num) {
     const squareSize = 640/num
   for (let i = 1; i <= num *num ; i++) {
@@ -10,6 +12,15 @@ const container = document.querySelector('#container')
     container.appendChild(div)
     }
   }
-  
 
-  makeGrid(3)
+
+  makeGrid(16)
+
+  const colorDiv = document.querySelectorAll('.divSquare')
+colorDiv.forEach(div => 
+  div.addEventListener('mouseover',  (event) => {
+    div.style.backgroundColor = 'black'
+
+  })
+)
+  
