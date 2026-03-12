@@ -1,6 +1,9 @@
 const container = document.querySelector('#container')
 
-
+  
+function newSketch() {
+  prompt('Enter a number between 2 and 100')
+}
 
   function makeGrid(num) {
     const squareSize = 640/num
@@ -14,7 +17,8 @@ const container = document.querySelector('#container')
   }
 
 
-  makeGrid(16)
+  makeGrid()
+
 
   const colorDiv = document.querySelectorAll('.divSquare')
 colorDiv.forEach(div => 
