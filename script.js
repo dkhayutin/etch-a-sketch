@@ -1,11 +1,13 @@
 const container = document.querySelector('#container')
+const btn = document.querySelector('#newGrid')
+btn.addEventListener("click", makeGrid)
 
-  
-function newSketch() {
-  prompt('Enter a number between 2 and 100')
-}
 
-  function makeGrid(num) {
+  function makeGrid() {
+    let num = prompt('Please enter a number between 2 and 100')
+     if(num <2 || num > 100){
+      alert('The number must be between 2 and 100')
+     }
     const squareSize = 640/num
   for (let i = 1; i <= num *num ; i++) {
     const div = document.createElement('div')
@@ -14,10 +16,9 @@ function newSketch() {
      div.style.height = `${squareSize}px`
     container.appendChild(div)
     }
-  }
+  } 
 
 
-  makeGrid()
 
 
   const colorDiv = document.querySelectorAll('.divSquare')
