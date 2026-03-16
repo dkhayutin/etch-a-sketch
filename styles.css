@@ -5,7 +5,10 @@
    align-items: center;
    width: 640px;
    height: 640px;
-   position: relative;  
+   position: relative; 
+   border: 2px solid blue;
+   margin-right: auto;
+   margin-left: auto; 
 } 
 
  .divSquare {
@@ -14,6 +17,15 @@
   box-sizing: border-box;
 } 
 
+.wrapper {
+    text-align: center;
+    padding: 10px
+}
+
+.button {
+    position: absolute;
+    top: 50%;
+}
 
 
 
