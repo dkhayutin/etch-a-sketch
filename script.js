@@ -8,9 +8,11 @@ removeBtn.addEventListener("click", () => {
 
  
   function makeGrid() {
+    container.innerHTML = ""; 
     let num = prompt('Please enter a number between 2 and 100')
      if(num < 2 || num > 100){
       alert ('Number not valid')
+      return; 
       } else {
     const squareSize = 640/num
   for (let i = 1; i <= num *num ; i++) {
